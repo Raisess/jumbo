@@ -1,0 +1,23 @@
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+const port = process.env.PORT || <%= props.port %>;
+
+app.use(cors());
+app.use(express.json());
+
+app.get('/api', (req, res) => {
+  try {
+    return res.status(201).json({
+      log: "Your jumbo api is ready!"
+    });
+  } catch (e) {
+    return res.status(401).json({
+      log: "Your jumbo api is broken!",
+      error: e
+    });
+  }
+});
+
+app.listen(port, () => console.log(`App running in port: ${ port }`));
