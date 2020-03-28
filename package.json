@@ -1,6 +1,6 @@
 {
   "name": "jumbojs",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "jumbojs CLI and framework",
   "private": false,
   "homepage": "https://github.com/Raisess/jumbo#readme",
@@ -32,7 +32,8 @@
     "standard": "^12.0.1",
     "prettier": "^1.12.1",
     "jest": "^24.1.0",
-    "mysql": "latest"
+    "mysql": "latest",
+    "firebase": "latest"
   },
   "keywords": [
     "express",

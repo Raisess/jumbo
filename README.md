@@ -72,7 +72,47 @@ mysql.close(conn);
 
 #### Firebase
 
-Comming soon...
+Using firebase driver.
+
+```javascript
+const { databases } = require('jumbojs/framework');
+const { firebase } = databases;
+const {
+  fb,
+  initiliaze,
+  get,
+  set,
+  delete
+} = firebase;
+
+// your firebase sdk config object
+const myFireBaseSDK = require('./myFireBaseSDKFile');
+
+// init your firebase app
+const fbInit = initialize(fb, myFireBaseSDK);
+
+// set data in your real-time database
+set(fb, '/users', {
+  1: {
+    name: 'foo'
+  }
+});
+
+// get your real-time database data
+get(fb, '/users', users => {
+  return console.log(users);
+  /*
+    {
+      1: {
+        name: 'foo'
+      }
+    }
+  */
+});
+
+// remove data from real-time database
+delete(fb, '/users');
+```
 
 ### Utils
 
