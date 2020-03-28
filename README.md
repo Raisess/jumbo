@@ -2,22 +2,42 @@
 
 A CLI for jumbo.
 
-## Customizing your CLI
-
-Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
-
-## Publishing to NPM
-
-To package your CLI up for NPM, do this:
+## Install jumbo CLI
 
 ```shell
-$ npm login
-$ npm whoami
-$ npm lint
-$ npm test
-(if typescript, run `npm run build` here)
-$ npm publish
+$ npm i -g jumbo
 ```
+
+## Creating a app
+
+To create a new jumbo app type:
+
+```shell
+$ jumbo new <appName> <appPort>
+```
+
+The default app port is 8000.
+
+## Starting your app
+
+To start your app type:
+
+```shell
+$ cd <appName>
+$ npm install
+$ npm start
+```
+And check in your browser "http://localhost:<appPort>/api".
+
+## Creating a app new route
+
+To create new route in your app, you must to enter in app folder and type:
+
+```shell
+$ jumbo route <routeName>
+```
+
+And your route as created in "./src/routes/<routeName>.js".
 
 # License
 
