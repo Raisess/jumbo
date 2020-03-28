@@ -72,7 +72,7 @@ or use CLI to make this file for your
 $ jumbo database mysql
 ```
 
-now configure your options in createConnection method and make your controller
+now configure your options in createConnection method and make your model
 
 ```javascript
 const { mysql, conn } = require('./mysql.conn.js');
