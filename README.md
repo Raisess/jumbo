@@ -39,6 +39,37 @@ $ jumbo route <routeName>
 
 And your route as created in "./src/routes/<routeName>.js".
 
+## Using jumbojs framework
+
+### Databases
+
+#### MySQL
+
+Creating a mysql connection, making a query and close connection.
+
+```js
+const { databases } = require('jumbojs/framework');
+const { mysql } = databases;
+
+// instancing a connection
+const conn = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'myDatabaseName'
+});
+
+// making a query
+mysql.query(conn, 'SELECT * FROM users', (err, res) => {
+  if(err) throw new Error(err);
+
+  return console.log(res);
+});
+
+// clossing connection
+mysql.close(conn);
+```
+
 # License
 
 MIT - see LICENSE

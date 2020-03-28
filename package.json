@@ -1,7 +1,7 @@
 {
   "name": "jumbojs",
-  "version": "0.0.5",
-  "description": "jumbojs CLI",
+  "version": "0.1.0",
+  "description": "jumbojs CLI and framework",
   "private": false,
   "homepage": "https://github.com/Raisess/jumbo#readme",
   "repository": "https://github.com/Raisess/jumbo",
@@ -31,9 +31,18 @@
   "devDependencies": {
     "standard": "^12.0.1",
     "prettier": "^1.12.1",
-    "jest": "^24.1.0"
+    "jest": "^24.1.0",
+    "mysql": "latest"
   },
-  "keywords": ["express", "middleware", "back-end", "Back-End", "framework", "CLI", "MVC"],
+  "keywords": [
+    "express",
+    "middleware",
+    "back-end",
+    "Back-End",
+    "framework",
+    "CLI",
+    "MVC"
+  ],
   "jest": {
     "testEnvironment": "node"
   },
