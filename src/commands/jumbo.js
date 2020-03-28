@@ -7,4 +7,4 @@ const command = {
   }
 }
 
-module.exports = command
+module.exports = command;

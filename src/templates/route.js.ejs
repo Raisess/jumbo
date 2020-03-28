@@ -1,0 +1,23 @@
+// <%= props.name %> middleware route
+/*
+  Type in app.js:
+    const <%= props.name %> = require('./routes/<%= props.name %>');
+
+    app.use('/api/<%= props.name %>', <%= props.name %>);
+*/
+const router = require('express').Router();
+
+router.get('/', (req, res) => {
+  try {
+    return res.status(201).json({
+      log: "<%= props.name %> route root"
+    });
+  } catch (e) {
+    return res.status(401).json({
+      log: "An error is ocurred in <%= props.name %> route root",
+      error: e
+    });
+  }
+});
+
+module.exports = router;
