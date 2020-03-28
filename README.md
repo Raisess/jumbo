@@ -40,7 +40,7 @@ $ jumbo route <routeName>
 
 And your route as created in "./src/routes/<routeName>.js".
 
-## Using jumbojs framework
+## Using JumboJS framework
 
 ### Databases
 
@@ -78,9 +78,7 @@ now configure your options in createConnection method and make your model
 const { mysql, conn } = require('./mysql.conn.js');
 
 // making a query
-mysql.query(conn, 'SELECT * FROM users', (err, res) => {
-  if(err) throw new Error(err);
-
+mysql.query(conn, 'SELECT * FROM users', (res) => {
   return console.log(res);
 });
 

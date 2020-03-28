@@ -12,7 +12,7 @@ module.exports = {
         database: database
       }); 
     } catch(err){
-      throw new Error(err);
+      return console.error(err);
     }
   },
   connect: connection => {
@@ -27,6 +27,10 @@ module.exports = {
   },
   close: connection => connection.end(),
   query: (connection, sql, callback) => {
-    return connection.query(sql, callback(err, results, fields));
+    return connection.query(sql, (err, res, fields) => {
+      if(err) console.error(err);
+     
+      return callback(res, fields);
+    });
   }
 };
