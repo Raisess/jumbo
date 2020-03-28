@@ -5,7 +5,7 @@ A CLI for jumbojs.
 ## Install jumbojs CLI
 
 ```shell
-$ npm i -g jumbo
+$ npm i -g jumbojs
 ```
 
 ## Creating a app
