@@ -90,7 +90,7 @@ mysql.close(conn);
 
 #### Firebase
 
-Using firebase driver.
+Using firebase driver, create new project and get web sdk in [Firebase Console](https://console.firebase.google.com/u/0/?hl=pt-br).
 
 ```javascript
 const { databases } = require('jumbojs/framework');
