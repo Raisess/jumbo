@@ -1,6 +1,6 @@
 {
   "name": "jumbojs",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "JumboJS CLI and framework",
   "private": false,
   "homepage": "https://github.com/Raisess/jumbo#readme",
@@ -29,12 +29,12 @@
     "gluegun": "latest"
   },
   "devDependencies": {
-    "standard": "^12.0.1",
-    "prettier": "^1.12.1",
+    "axios": "^0.19.2",
+    "firebase": "latest",
     "jest": "^24.1.0",
     "mysql": "latest",
-    "firebase": "latest",
-    "axios": "latest"
+    "prettier": "^1.12.1",
+    "standard": "^12.0.1"
   },
   "keywords": [
     "express",

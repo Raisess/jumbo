@@ -154,6 +154,37 @@ console.log(now());
 */
 ```
 
+#### Request
+
+Make a request for another url.
+
+```javascript
+const { utils } = require('jumbojs/framework');
+const { request } = utils;
+
+// get request
+request({
+  method: 'get',
+  baseUrl: 'https://some-domain.com/api',
+  url: '/users'
+}, response => {
+  console.log(response);
+});
+
+// post request
+request({
+  method: 'post',
+  baseUrl: 'https://some-domain.com/api',
+  url: '/user/create',
+  data: {
+    name: 'Otter',
+    foo: 'JumboJS'
+  }
+}, response => {
+  console.log(response);
+});
+```
+
 # License
 
 MIT - see LICENSE

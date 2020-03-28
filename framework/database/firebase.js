@@ -11,9 +11,7 @@ module.exports = {
 
       return res;
     }).catch(err => {
-      if(callback) return callback(err);
-
-      return err;
+      return console.error(err);
     });
   },
   get: (fb, ref, callback) => {
@@ -26,9 +24,7 @@ module.exports = {
 
       return data;
     }).catch(err => {
-      if(callback) return callback(err);
-
-      return err;
+      return console.error(err);
     });
   },
   delete: (fb, ref, callback) => {
@@ -39,9 +35,7 @@ module.exports = {
 
       return res;
     }).catch(err => {
-      if(callback) return callback(err);
-
-      return err;
+      return console.error(err);
     });
   }
 };
