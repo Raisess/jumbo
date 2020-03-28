@@ -30,6 +30,7 @@
     "prettier": "^1.12.1",
     "jest": "^24.1.0"
   },
+  "keywords": ["express", "middleware", "back-end", "Back-End", "framework", "CLI", "MVC"],
   "jest": {
     "testEnvironment": "node"
   },
