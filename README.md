@@ -1,8 +1,9 @@
-# jumbojs CLI
+# JumboJS CLI and framework
 
-A CLI for jumbojs.
+A CLI and framework called JumboJS.
+This package optimize time of creating express api core and middleware routes.
 
-## Install jumbojs CLI
+## Install JumboJS CLI
 
 ```shell
 $ npm i -g jumbojs
@@ -58,6 +59,23 @@ const conn = mysql.createConnection({
   password: '',
   database: 'myDatabaseName'
 });
+
+module.exports = {
+  mysql: mysql,
+  conn: conn
+}
+```
+
+or use CLI to make this file for your
+
+```shell
+$ jumbo database mysql
+```
+
+now configure your options in createConnection method and make your controller
+
+```javascript
+const { mysql, conn } = require('./mysql.conn.js');
 
 // making a query
 mysql.query(conn, 'SELECT * FROM users', (err, res) => {
