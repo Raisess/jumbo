@@ -24,6 +24,9 @@ const command = {
       print.success('MySQL database connection created in "./src/database/mysql.conn.js"');
       print.info('Configure it!');
     }
+    else{
+      print.error('This database type not exits try mysql');
+    }
   }
 }
 
