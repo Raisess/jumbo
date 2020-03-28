@@ -1,8 +1,11 @@
 {
   "name": "jumbojs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "jumbojs CLI",
   "private": false,
+  "homepage": "https://github.com/Raisess/jumbo#readme",
+  "repository": "https://github.com/Raisess/jumbo",
+  "author": "Raisess 'Danilo Santana'",
   "bin": {
     "jumbo": "bin/jumbo"
   },
