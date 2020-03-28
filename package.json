@@ -1,6 +1,6 @@
 {
   "name": "jumbojs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "jumbojs CLI",
   "private": false,
   "bin": {
