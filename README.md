@@ -27,7 +27,7 @@ $ cd <appName>
 $ npm install
 $ npm start
 ```
-And check in your browser "http://localhost:<appPort>/api".
+And check in your browser "http://localhost:appPort/api".
 
 ## Creating a app new route
 
