@@ -1,8 +1,8 @@
-# jumbo CLI
+# jumbojs CLI
 
-A CLI for jumbo.
+A CLI for jumbojs.
 
-## Install jumbo CLI
+## Install jumbojs CLI
 
 ```shell
 $ npm i -g jumbo

@@ -1,7 +1,7 @@
 {
-  "name": "jumbo",
+  "name": "jumbojs",
   "version": "0.0.3",
-  "description": "jumbo CLI",
+  "description": "jumbojs CLI",
   "private": false,
   "bin": {
     "jumbo": "bin/jumbo"
