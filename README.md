@@ -70,6 +70,32 @@ mysql.query(conn, 'SELECT * FROM users', (err, res) => {
 mysql.close(conn);
 ```
 
+#### Firebase
+
+Comming soon...
+
+### Utils
+
+#### Time
+
+How to get data timestamp???
+
+```javascript
+const { utils } = require('jumbojs/framework');
+const { now } = utils;
+
+console.log(now());
+/*
+  returns a object
+  {
+    day,
+    month,
+    year,
+    time: this string contains hour:mins:secs
+  }
+*/
+```
+
 # License
 
 MIT - see LICENSE
