@@ -17,11 +17,11 @@ const command = {
     }
     else if(type === 'mysql'){
       createTemplate(template, {
-        template: 'database/mysql.js.ejs',
-        target: 'src/database/mysql.conn.js'
+        template: `database/${ type }.js.ejs`,
+        target: `src/database/${ type }.conn.js`
       });
 
-      print.success('MySQL database connection created in "./src/database/mysql.conn.js"');
+      print.success(`${ type } database connection created in "./src/database/mysql.conn.js"`);
       print.info('Configure it!');
     }
     else{
