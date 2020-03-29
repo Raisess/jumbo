@@ -1,6 +1,6 @@
 {
   "name": "jumbojs",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "JumboJS CLI and framework",
   "private": false,
   "homepage": "https://github.com/Raisess/jumbo#readme",
@@ -19,6 +19,7 @@
   },
   "files": [
     "src",
+    "framework",
     "LICENSE",
     "readme.md",
     "docs",
