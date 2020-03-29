@@ -1,0 +1,27 @@
+const <%= props.name %> = require('./models/<%= props.name%>');
+
+class <%= props.class %>{
+  constructor(data){
+    this._data = data;
+  }
+
+  // create your methods here
+  /*
+  get data(){
+    return this._data;
+  }
+
+  set data(newData){
+    this._data = newData;
+  }
+
+  create(){
+    // your database model to create a <%= props.name %>
+    <%= props.name %>.create(this._data);
+  }
+  */
+  // this methods is only examples, try to create in your style
+  
+}
+
+module.exports = <%= props.class %>;

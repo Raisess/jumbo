@@ -1,5 +1,9 @@
 # JumboJS CLI and framework
 
+<div style="width: 100%; text-align: center;">
+  <img src="https://images.emojiterra.com/google/android-10/128px/1f9a6.png" />
+</div>
+
 A CLI and framework called JumboJS.
 This package optimize time of creating express api core and middleware routes.
 
@@ -30,7 +34,7 @@ $ npm start
 ```
 And check in your browser "http://localhost:appPort/api".
 
-## Creating a app new route
+## Creating a new app route
 
 To create new route in your app, you must to enter in app folder and type:
 
@@ -129,6 +133,20 @@ get(fb, '/users', users => {
 // remove data from real-time database
 delete(fb, '/users');
 ```
+
+### Controllers
+
+When you have create a model to use your database, try to create a controller.
+
+```shell
+$ jumbo controller <controllerName>
+```
+
+Set your controller name equals they model name, for User controller type user and the CLI make the first letter uppercase in the file.
+
+This file is created in './src/controllers' folder.
+
+**THIS FILE IS A JAVASCRIPT CLASS "OBJECT"**
 
 ### Utils
 

@@ -3,7 +3,8 @@ const command = {
   run: async toolbox => {
     const { print } = toolbox;
 
-    print.info('Welcome to your CLI');
+    print.info('Welcome to jumbo CLI');
+    print.info('try jumbo -h to see some commands');
   }
 }
 

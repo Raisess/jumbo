@@ -2,6 +2,7 @@ const createTemplate = require('../modules/createTemplate');
 
 const command = {
   name: 'new',
+  alias: 'n',
   description: 'Create new jumbo express app',
   run: async toolbox => {
     const {

@@ -2,6 +2,7 @@ const createTemplate = require('../modules/createTemplate');
 
 const command = {
   name: 'route',
+  alias: 'r',
   description: 'Create jumbo express middleware route',
   run: async toolbox => {
     const {

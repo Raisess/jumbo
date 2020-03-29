@@ -2,6 +2,7 @@ const createTemplate = require('../modules/createTemplate');
 
 const command = {
   name: 'database',
+  alias: 'db',
   description: 'Init a database with JumboJS framework',
   run: async toolbox => {
     const {
