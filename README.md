@@ -47,8 +47,6 @@ and apply in your app.js to use views, like:
 ```js
 const init = require('./mvc')(app);
 
-init(app);
-
 app.get('/', function (req, res) {
   res.render('index', { title: 'My jumbo pug page' });
 });
