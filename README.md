@@ -45,7 +45,10 @@ $ jumbo view <viewName>
 and apply in your app.js to use views, like:
 
 ```js
-const { viewsInit } = require('jumbojs/framework')(app);
+const { mvc } = require('jumbojs/framework');
+const { init } = mvc;
+
+init(app);
 
 app.get('/', function (req, res) {
   res.render('index', { title: 'My jumbo pug page' });

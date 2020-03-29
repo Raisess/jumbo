@@ -15,5 +15,7 @@ module.exports = {
     now: () => now(),
     request: (options, callback) => request(options, callback)
   },
-  viewsInit: app => viewsInit(app)
+  mvc: {
+    init: app => viewsInit(app)
+  }
 }
