@@ -26,6 +26,11 @@ const command = {
         }
       });
 
+      createTemplate(template, {
+        template: 'view/init.js.ejs',
+        target: `src/mvc.js`
+      });
+
       print.success(`Created your ${ name } view!`);
       return;
     }

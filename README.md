@@ -45,8 +45,7 @@ $ jumbo view <viewName>
 and apply in your app.js to use views, like:
 
 ```js
-const { mvc } = require('jumbojs/framework');
-const { init } = mvc;
+const init = require('./mvc')(app);
 
 init(app);
 
