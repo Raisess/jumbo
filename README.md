@@ -34,6 +34,26 @@ $ npm start
 ```
 And check in your browser "http://localhost:appPort/api".
 
+## Do not want create a API use views and make a MVC project
+
+To create view in project type:
+
+```shell
+$ jumbo view <viewName>
+```
+
+and apply in your app.js to use views, like:
+
+```js
+app.set('view engine', 'pug');
+
+app.get('/', function (req, res) {
+  res.render('index', { title: 'My jumbo pug page' });
+});
+```
+
+and try this path "http://localhost:appPort/" without api endpoint.
+
 ## Creating a new app route
 
 To create new route in your app, you must to enter in app folder and type:
