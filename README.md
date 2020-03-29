@@ -122,7 +122,7 @@ const {
   initiliaze,
   get,
   set,
-  delete
+  remove
 } = firebase;
 
 // your firebase sdk config object

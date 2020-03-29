@@ -27,7 +27,7 @@ module.exports = {
       return console.error(err);
     });
   },
-  delete: (fb, ref, callback) => {
+  remove: (fb, ref, callback) => {
     const db = fb.database();
 
     db.ref(ref).remove().then(res => {
