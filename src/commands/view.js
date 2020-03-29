@@ -14,7 +14,7 @@ const command = {
     const name = parameters.first;
 
     if(!name){
-      print.error('You must specify controller name');
+      print.error('You must specify view name');
       return;
     }
     else{

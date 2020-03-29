@@ -1,6 +1,6 @@
 {
   "name": "jumbojs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "JumboJS CLI and framework",
   "private": false,
   "homepage": "https://github.com/Raisess/jumbo#readme",
@@ -43,7 +43,10 @@
     "Back-End",
     "framework",
     "CLI",
-    "MVC"
+    "MVC",
+    "firebase",
+    "mysql",
+    "pug"
   ],
   "jest": {
     "testEnvironment": "node"
