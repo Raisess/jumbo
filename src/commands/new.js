@@ -62,8 +62,15 @@ const command = {
       }
 
       print.success(`Created new app ${ name } in port ${ 8000 }\n`);
-      print.info(`Type now:\n\ncd ${ name }\nnpm install\nnpm start\n\nCheck in your browser for "http://localhost:${ 8000 }/api"`);
-      return;
+
+      if(type === 'mvc'){
+        print.info(`Type now:\n\ncd ${ name }\nnpm install\nnpm start\n\nCheck in your browser for "http://localhost:8000"`);
+        return;
+      }
+      else{
+        print.info(`Type now:\n\ncd ${ name }\nnpm install\nnpm start\n\nCheck in your browser for "http://localhost:8000/api"`);
+        return;
+      }
     }
     else{
       createTemplate(template, {
@@ -106,8 +113,15 @@ const command = {
       }
       
       print.success(`Created new app ${ name } in port ${ port }\n`);
-      print.info(`Type now:\n\ncd ${ name }\nnpm install\nnpm start\n\nCheck in your browser for "http://localhost:${ port }/api"`);
-      return;
+
+      if(type === 'mvc'){
+        print.info(`Type now:\n\ncd ${ name }\nnpm install\nnpm start\n\nCheck in your browser for "http://localhost:${ port }"`);
+        return;
+      }
+      else{
+        print.info(`Type now:\n\ncd ${ name }\nnpm install\nnpm start\n\nCheck in your browser for "http://localhost:${ port }/api"`);
+        return;
+      }
     }
   }
 }
