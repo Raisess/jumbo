@@ -151,7 +151,7 @@ get(fb, '/users', users => {
 });
 
 // remove data from real-time database
-delete(fb, '/users');
+remove(fb, '/users');
 ```
 
 ### Controllers
