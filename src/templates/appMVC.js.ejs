@@ -1,0 +1,17 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const app = express();
+const init = require('./mvc')(app);
+
+const port = process.env.PORT || <%= props.port %>;
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/', (req, res) => {
+  res.send('index', { title: "Hello im Jumbo!" });
+});
+
+app.listen(port, () => console.log(`App running in port: ${ port }`));

@@ -18,8 +18,10 @@ $ npm i -g jumbojs
 To create a new jumbo app type:
 
 ```shell
-$ jumbo new <appName> <appPort>
+$ jumbo new <appName> <appType> <appPort>
 ```
+
+**App type** is the type of aplication api or mvc, type **'mvc'** to create a model view controller app or type **'api'** to create a micro-service.
 
 The default app port is 8000.
 
