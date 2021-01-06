@@ -30,7 +30,7 @@
     "gluegun": "latest"
   },
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "firebase": "latest",
     "jest": "^24.1.0",
     "mysql": "latest",
